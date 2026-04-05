@@ -1,0 +1,4 @@
+logging:
+  level:
+    org.springframework.test: DEBUG
+    ru.geardroid: DEBUG
