@@ -1,6 +1,18 @@
 package ru.geardroid.design_patterns.entity.pc;
 
-public record PersonalComputer(Processor processor) {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import ru.geardroid.design_patterns.pattern.prototype.Copyable;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class PersonalComputer implements Copyable {
+
+    private Processor processor;
 
     public PersonalComputer buildPowerSupply() {
         print("Ставим блок питания");
@@ -19,5 +31,10 @@ public record PersonalComputer(Processor processor) {
 
     private void print(String msg) {
         System.out.println(msg);
+    }
+
+    @Override
+    public PersonalComputer copy() {
+        return new PersonalComputer(processor);
     }
 }
