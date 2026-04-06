@@ -11,11 +11,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class AbstractFactoryTest {
 
-    private static final Map<Class<? extends Car>, Long> deCarPrices = Map.of(
+    private static final Map<Class<? extends Car>, Long> DE_CAR_PRICES = Map.of(
             Lada.class, DELada.PRICE,
             Porsche.class, DEPorsche.PRICE
     );
-    private static final Map<Class<? extends Car>, Long> ruCarPrices = Map.of(
+    private static final Map<Class<? extends Car>, Long> RU_CAR_PRICES = Map.of(
             Lada.class, RULada.PRICE,
             Porsche.class, RUPorsche.PRICE
     );
@@ -24,7 +24,7 @@ class AbstractFactoryTest {
     void givenDECarFactory_thenCorrectPrices() {
         // given:
         var factory = new DECarFactory();
-        var expectedPrices = deCarPrices;
+        var expectedPrices = DE_CAR_PRICES;
         // when:
         var ladaPrice = factory.getLada().getPrice();
         var porschePrice = factory.getPorsche().getPrice();
@@ -37,7 +37,7 @@ class AbstractFactoryTest {
     void givenRUCarFactory_thenCorrectPrices() {
         // given:
         var factory = new RUCarFactory();
-        var expectedPrices = ruCarPrices;
+        var expectedPrices = RU_CAR_PRICES;
         // when:
         var ladaPrice = factory.getLada().getPrice();
         var porschePrice = factory.getPorsche().getPrice();

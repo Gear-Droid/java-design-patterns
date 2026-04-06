@@ -16,19 +16,18 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class FactoryTest {
 
-    private static final Set<Arguments> osStorage = Set.of(
+    private static final OSFactory OS_FACTORY = new OSFactory();
+    private static final Set<Arguments> OS_TEST_DATA = Set.of(
             Arguments.of(WindowsOS.NAME, WindowsOS.class),
             Arguments.of(MacOS.NAME, MacOS.class),
             Arguments.of(LinuxOS.NAME, LinuxOS.class)
     );
 
-    private final OSFactory factory = new OSFactory();
-
     @ParameterizedTest
-    @FieldSource("osStorage")
+    @FieldSource("OS_TEST_DATA")
     void givenOsInput_thenCorrectClass(String osName, Class<?> osClass){
         // when:
-        OS os = factory.getCurrentOS(osName);
+        OS os = OS_FACTORY.getCurrentOS(osName);
         // then:
         assertThat(os).isInstanceOf(osClass);
         assertThat(os.getOSName()).isEqualTo(osName);

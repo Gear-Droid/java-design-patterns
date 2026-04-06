@@ -16,17 +16,17 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class BuilderTest {
 
-    private static final List<Arguments> personalComputersTestData = List.of(
+    private static final List<Arguments> PC_TEST_DATA = List.of(
             Arguments.of(new X86PCBuilder(), new X86Processor()),
             Arguments.of(new ARMPCBuilder(), new ARMProcessor())
     );
 
     @ParameterizedTest
-    @FieldSource("personalComputersTestData")
+    @FieldSource("PC_TEST_DATA")
     void whenBuildPC_thenCorrectProcessor(PCBuilder builder, Processor expectedProcessor) {
         // when:
         var processor = builder.build()
-                .processor();
+                .getProcessor();
         // then:
         assertThat(processor.getProcessorType())
                 .isEqualTo(expectedProcessor.getProcessorType());
