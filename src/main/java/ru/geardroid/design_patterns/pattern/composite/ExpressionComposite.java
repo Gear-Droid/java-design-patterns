@@ -23,13 +23,10 @@ public class ExpressionComposite implements SubExpression {
 
     @Override
     public Number value() {
-        Number result = 0;
-
-        for (SubExpression expr: expressions) {
-            result = result.floatValue() + expr.value().floatValue();
-        }
-
-        return result;
+        return expressions.stream()
+                .map(SubExpression::value)
+                .map(Number::floatValue)
+                .reduce(0f, Float::sum);
     }
 
     @Override
