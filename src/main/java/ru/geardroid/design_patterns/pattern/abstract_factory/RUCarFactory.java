@@ -1,9 +1,9 @@
 package ru.geardroid.design_patterns.pattern.abstract_factory;
 
-import ru.geardroid.design_patterns.entity.car.Lada;
-import ru.geardroid.design_patterns.entity.car.Porsche;
-import ru.geardroid.design_patterns.entity.car.RULada;
-import ru.geardroid.design_patterns.entity.car.RUPorsche;
+import ru.geardroid.design_patterns.entity.car.saleable.Lada;
+import ru.geardroid.design_patterns.entity.car.saleable.Porsche;
+import ru.geardroid.design_patterns.entity.car.saleable.RULada;
+import ru.geardroid.design_patterns.entity.car.saleable.RUPorsche;
 
 public class RUCarFactory implements AbstractCarFactory {
 

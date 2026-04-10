@@ -1,4 +1,4 @@
-package ru.geardroid.design_patterns.entity.car;
+package ru.geardroid.design_patterns.entity.car.saleable;
 
 public class RUPorsche implements Porsche {
 
