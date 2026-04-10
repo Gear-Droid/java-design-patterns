@@ -12,7 +12,7 @@ class FacadeTest {
 
     private static final boolean ACTIVE = true;
     private static final long ENGINE_STILL_WORKING_TIME = EngineStarter.WORK_TIME_DURATION.toMillis() / 2;
-    private static final long ENGINE_FINISHED_WORKING_TIME = EngineStarter.WORK_TIME_DURATION.toMillis() + 100;
+    private static final long ENGINE_FINISHED_WORK_TIME = EngineStarter.WORK_TIME_DURATION.toMillis() + 100;
 
     private ServiceableCarFacade createCarFacade() {
         return new ServiceableCarFacade(
@@ -30,9 +30,9 @@ class FacadeTest {
         carFacade.startEngine();
         Thread.sleep(ENGINE_STILL_WORKING_TIME);
         // then:
-        assertThat(carFacade.getStarter().isActive()).isEqualTo(ACTIVE);
-        assertThat(carFacade.getFuelInjector().isActive()).isEqualTo(ACTIVE);
-        assertThat(carFacade.getCoolingController().isActive()).isEqualTo(ACTIVE);
+        assertThat(carFacade.starter().isActive()).isEqualTo(ACTIVE);
+        assertThat(carFacade.fuelInjector().isActive()).isEqualTo(ACTIVE);
+        assertThat(carFacade.coolingController().isActive()).isEqualTo(ACTIVE);
     }
 
     @Test
@@ -41,11 +41,11 @@ class FacadeTest {
         var carFacade = createCarFacade();
         carFacade.startEngine();
         // when:
-        Thread.sleep(ENGINE_FINISHED_WORKING_TIME);
+        Thread.sleep(ENGINE_FINISHED_WORK_TIME);
         // then:
-        assertThat(carFacade.getStarter().isActive()).isEqualTo(!ACTIVE);
-        assertThat(carFacade.getFuelInjector().isActive()).isEqualTo(ACTIVE);
-        assertThat(carFacade.getCoolingController().isActive()).isEqualTo(ACTIVE);
+        assertThat(carFacade.starter().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.fuelInjector().isActive()).isEqualTo(ACTIVE);
+        assertThat(carFacade.coolingController().isActive()).isEqualTo(ACTIVE);
     }
 
     @Test
@@ -57,9 +57,9 @@ class FacadeTest {
         Thread.sleep(ENGINE_STILL_WORKING_TIME);
         carFacade.stopEngine();
         // then:
-        assertThat(carFacade.getStarter().isActive()).isEqualTo(!ACTIVE);
-        assertThat(carFacade.getFuelInjector().isActive()).isEqualTo(!ACTIVE);
-        assertThat(carFacade.getCoolingController().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.starter().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.fuelInjector().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.coolingController().isActive()).isEqualTo(!ACTIVE);
     }
 
     @Test
@@ -69,10 +69,10 @@ class FacadeTest {
         carFacade.startEngine();
         // when:
         carFacade.stopEngine();
-        Thread.sleep(ENGINE_FINISHED_WORKING_TIME);
+        Thread.sleep(ENGINE_FINISHED_WORK_TIME);
         // then:
-        assertThat(carFacade.getStarter().isActive()).isEqualTo(!ACTIVE);
-        assertThat(carFacade.getFuelInjector().isActive()).isEqualTo(!ACTIVE);
-        assertThat(carFacade.getCoolingController().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.starter().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.fuelInjector().isActive()).isEqualTo(!ACTIVE);
+        assertThat(carFacade.coolingController().isActive()).isEqualTo(!ACTIVE);
     }
 }
