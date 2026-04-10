@@ -5,7 +5,7 @@ import ru.geardroid.design_patterns.pattern.proxy.ImageProxy;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class ProxyTest {
+class ProxyTest {
 
     private static final String TEST_FILENAME = "test.example";
 

@@ -17,7 +17,7 @@
 - _**Adapter (Адаптер)** - это конвертер между двумя несовместимыми объектами. Используя паттерн адаптера, мы можем объединить два несовместимых интерфейса. См. пример: [ABankAdapter](src/main/java/ru/geardroid/design_patterns/pattern/adapter/ABankAdapter.java)_
 - _**Composite (Компоновщик)** - использует один класс для представления древовидной структуры. См. пример: [ExpressionComposite](src/main/java/ru/geardroid/design_patterns/pattern/composite/ExpressionComposite.java)_
 - _**Proxy (Заместитель)** - представляет функциональность другого класса. См. пример: [ImageProxy](src/main/java/ru/geardroid/design_patterns/pattern/proxy/ImageProxy.java)_
-- _**Flyweight (Легковес)** - вместо создания большого количества похожих объектов, объекты используются повторно._
+- _**Flyweight (Легковес)** - вместо создания большого количества похожих объектов, объекты используются повторно. См. пример: [Flyweight](src/main/java/ru/geardroid/design_patterns/pattern/flyweight/Flyweight.java)_
 - _**Facade (Фасад)** - обеспечивает простой интерфейс для клиента, и клиент использует интерфейс для взаимодействия с системой._
 - _**Bridge (Мост)** - делает конкретные классы независимыми от классов реализации интерфейса._
 - _**Decorator (Декоратор)** - добавляет новые функциональные возможности существующего объекта без привязки его структуры._
