@@ -2,16 +2,17 @@ package ru.geardroid.design_patterns.pattern.facade;
 
 import lombok.extern.slf4j.Slf4j;
 import ru.geardroid.design_patterns.entity.car.servicable.CarEngine;
-import ru.geardroid.design_patterns.entity.car.servicable.CoolingController;
-import ru.geardroid.design_patterns.entity.car.servicable.EngineStarter;
-import ru.geardroid.design_patterns.entity.car.servicable.FuelInjector;
+import ru.geardroid.design_patterns.entity.car.servicable.engine_device.CoolingController;
+import ru.geardroid.design_patterns.entity.car.servicable.engine_device.EngineStarter;
+import ru.geardroid.design_patterns.entity.car.servicable.engine_device.FuelInjector;
 
 import java.util.concurrent.*;
 
 @Slf4j
 public record ServiceableCarFacade(EngineStarter starter,
                                    FuelInjector fuelInjector,
-                                   CoolingController coolingController) implements CarEngine {
+                                   CoolingController coolingController,
+                                   int speedLimit) implements CarEngine {
 
     private static final int DEFAULT_COOLING_TEMP = 90;
     private static final int MAX_ALLOWED_TEMP = 50;

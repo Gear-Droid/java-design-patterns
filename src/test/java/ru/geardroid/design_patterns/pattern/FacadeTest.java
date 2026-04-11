@@ -1,9 +1,9 @@
 package ru.geardroid.design_patterns.pattern;
 
 import org.junit.jupiter.api.Test;
-import ru.geardroid.design_patterns.entity.car.servicable.CoolingController;
-import ru.geardroid.design_patterns.entity.car.servicable.EngineStarter;
-import ru.geardroid.design_patterns.entity.car.servicable.FuelInjector;
+import ru.geardroid.design_patterns.entity.car.servicable.engine_device.CoolingController;
+import ru.geardroid.design_patterns.entity.car.servicable.engine_device.EngineStarter;
+import ru.geardroid.design_patterns.entity.car.servicable.engine_device.FuelInjector;
 import ru.geardroid.design_patterns.pattern.facade.ServiceableCarFacade;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -11,6 +11,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class FacadeTest {
 
     private static final boolean ACTIVE = true;
+    private static final int TEST_SPEED_LIMIT = 200;
     private static final long ENGINE_STILL_WORKING_TIME = EngineStarter.WORK_TIME_DURATION.toMillis() / 2;
     private static final long ENGINE_FINISHED_WORK_TIME = EngineStarter.WORK_TIME_DURATION.toMillis() + 100;
 
@@ -18,7 +19,8 @@ class FacadeTest {
         return new ServiceableCarFacade(
                 new EngineStarter(),
                 new FuelInjector(),
-                new CoolingController()
+                new CoolingController(),
+                TEST_SPEED_LIMIT
         );
     }
 

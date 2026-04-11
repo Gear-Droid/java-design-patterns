@@ -19,7 +19,7 @@
 - _**Proxy (Заместитель)** - представляет функциональность другого класса. См. пример: [ImageProxy](src/main/java/ru/geardroid/design_patterns/pattern/proxy/ImageProxy.java)_
 - _**Flyweight (Легковес)** - вместо создания большого количества похожих объектов, объекты используются повторно. См. пример: [Flyweight](src/main/java/ru/geardroid/design_patterns/pattern/flyweight/Flyweight.java)_
 - _**Facade (Фасад)** - обеспечивает простой интерфейс для клиента, и клиент использует интерфейс для взаимодействия с системой. См. пример: [ServiceableCarFacade](src/main/java/ru/geardroid/design_patterns/pattern/facade/ServiceableCarFacade.java)_
-- _**Bridge (Мост)** - делает конкретные классы независимыми от классов реализации интерфейса._
+- _**Bridge (Мост)** - делает конкретные классы независимыми от классов реализации интерфейса. См. пример: [CarEngineBridge](src/main/java/ru/geardroid/design_patterns/pattern/bridge/CarEngineBridge.java)_
 - _**Decorator (Декоратор)** - добавляет новые функциональные возможности существующего объекта без привязки его структуры._
 
 ### Поведенческие
