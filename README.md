@@ -20,7 +20,7 @@
 - _**Flyweight (Легковес)** - вместо создания большого количества похожих объектов, объекты используются повторно. См. пример: [Flyweight](src/main/java/ru/geardroid/design_patterns/pattern/flyweight/Flyweight.java)_
 - _**Facade (Фасад)** - обеспечивает простой интерфейс для клиента, и клиент использует интерфейс для взаимодействия с системой. См. пример: [ServiceableCarFacade](src/main/java/ru/geardroid/design_patterns/pattern/facade/ServiceableCarFacade.java)_
 - _**Bridge (Мост)** - делает конкретные классы независимыми от классов реализации интерфейса. См. пример: [CarEngineBridge](src/main/java/ru/geardroid/design_patterns/pattern/bridge/CarEngineBridge.java)_
-- _**Decorator (Декоратор)** - добавляет новые функциональные возможности существующего объекта без привязки его структуры._
+- _**Decorator (Декоратор)** - добавляет новые функциональные возможности существующего объекта без привязки его структуры. См. пример: [SmartHouseDecorator](src/main/java/ru/geardroid/design_patterns/pattern/decorator/SmartHouseDecorator.java), [InsuranceHouseDecorator](src/main/java/ru/geardroid/design_patterns/pattern/decorator/InsuranceHouseDecorator.java)_
 
 ### Поведенческие
 Поведенческие паттерны используются для того, чтобы упростить взаимодействие между сущностями.
