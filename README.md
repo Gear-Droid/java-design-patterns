@@ -27,7 +27,7 @@
 - _**Template Method (Шаблонный метод)** - определяющий основу алгоритма и позволяющий наследникам переопределять некоторые шаги алгоритма, не изменяя его структуру в целом. См. пример: [CarEngineTemplate](src/main/java/ru/geardroid/design_patterns/pattern/template_method/CarEngineTemplate.java)_
 - _**Mediator (Посредник)** - предоставляет класс посредника, который обрабатывает все коммуникации между различными классами. См. пример: [MessageMediator](src/main/java/ru/geardroid/design_patterns/pattern/mediator/MessageMediator.java)_
 - _**Chain of Responsibility (Цепочка обязанностей)** - позволяет избежать жесткой зависимости отправителя запроса от его получателя, при этом запрос может быть обработан несколькими объектами. См. пример: [PaymentChainOfResponsibility](src/main/java/ru/geardroid/design_patterns/pattern/chain_of_responsibility/PaymentChainOfResponsibility.java)_
-- _**Observer (Наблюдатель)** - позволяет одним объектам следить и реагировать на события, происходящие в других объектах._
+- _**Observer (Наблюдатель)** - позволяет одним объектам следить и реагировать на события, происходящие в других объектах. См. пример: [UniversityObserver](src/main/java/ru/geardroid/design_patterns/pattern/observer/UniversityObserver.java)_
 - _**Strategy (Стратегия)** - алгоритм стратегии может быть изменен во время выполнения программы._
 - _**Command (Команда)** - интерфейс команды объявляет метод для выполнения определенного действия._
 - _**State (Состояние)** - объект может изменять свое поведение в зависимости от его состояния._
