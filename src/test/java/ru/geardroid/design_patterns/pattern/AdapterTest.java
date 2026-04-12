@@ -6,7 +6,7 @@ import ru.geardroid.design_patterns.entity.bank.ABank;
 import ru.geardroid.design_patterns.entity.bank.TBank;
 import ru.geardroid.design_patterns.pattern.adapter.ABankAdapter;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class AdapterTest {
 

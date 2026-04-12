@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.geardroid.design_patterns.entity.car.serviceable.BrokenCarEngineEngine;
 import ru.geardroid.design_patterns.entity.car.serviceable.ServiceableCarEngine;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class TemplateTest {
 

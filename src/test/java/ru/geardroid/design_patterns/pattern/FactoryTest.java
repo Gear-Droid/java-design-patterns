@@ -11,8 +11,7 @@ import ru.geardroid.design_patterns.pattern.factory.OSFactory;
 
 import java.util.Set;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FactoryTest {
 

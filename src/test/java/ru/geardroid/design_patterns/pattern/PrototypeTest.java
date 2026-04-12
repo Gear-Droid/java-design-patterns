@@ -6,7 +6,7 @@ import ru.geardroid.design_patterns.entity.pc.PersonalComputer;
 import ru.geardroid.design_patterns.entity.pc.Processor;
 import ru.geardroid.design_patterns.entity.pc.X86Processor;
 
-import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class PrototypeTest {
 

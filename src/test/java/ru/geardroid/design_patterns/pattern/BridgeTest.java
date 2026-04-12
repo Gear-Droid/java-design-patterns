@@ -13,7 +13,7 @@ import ru.geardroid.design_patterns.pattern.bridge.CarEngineBridge;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class BridgeTest {
 

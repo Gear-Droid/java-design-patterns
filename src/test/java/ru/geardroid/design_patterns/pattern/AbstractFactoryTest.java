@@ -7,7 +7,7 @@ import ru.geardroid.design_patterns.pattern.abstract_factory.RUCarFactory;
 
 import java.util.Map;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class AbstractFactoryTest {
 

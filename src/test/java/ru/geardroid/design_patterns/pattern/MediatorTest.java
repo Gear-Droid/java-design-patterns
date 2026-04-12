@@ -6,7 +6,7 @@ import org.mockito.Mockito;
 import ru.geardroid.design_patterns.entity.user.User;
 import ru.geardroid.design_patterns.pattern.mediator.MessageMediator;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.times;
 
 public class MediatorTest {
 

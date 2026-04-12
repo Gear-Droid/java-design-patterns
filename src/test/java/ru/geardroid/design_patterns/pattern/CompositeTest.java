@@ -5,7 +5,7 @@ import ru.geardroid.design_patterns.pattern.composite.ExpressionComposite;
 import ru.geardroid.design_patterns.entity.expression.ExpressionValue;
 import ru.geardroid.design_patterns.entity.expression.SubExpression;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class CompositeTest {
 

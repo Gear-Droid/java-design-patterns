@@ -6,7 +6,7 @@ import ru.geardroid.design_patterns.entity.house.WoodenHouse;
 import ru.geardroid.design_patterns.pattern.decorator.InsuranceHouseDecorator;
 import ru.geardroid.design_patterns.pattern.decorator.SmartHouseDecorator;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class DecoratorTest {
 

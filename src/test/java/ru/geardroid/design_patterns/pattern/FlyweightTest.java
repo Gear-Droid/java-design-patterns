@@ -9,7 +9,7 @@ import ru.geardroid.design_patterns.pattern.flyweight.FlyweightFactory;
 
 import java.util.List;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FlyweightTest {
 

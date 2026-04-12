@@ -6,7 +6,7 @@ import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.EngineS
 import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.FuelInjector;
 import ru.geardroid.design_patterns.pattern.facade.ServiceableCarFacade;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class FacadeTest {
 
