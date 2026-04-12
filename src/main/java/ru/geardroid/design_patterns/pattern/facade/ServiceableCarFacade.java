@@ -1,10 +1,10 @@
 package ru.geardroid.design_patterns.pattern.facade;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.geardroid.design_patterns.entity.car.servicable.CarEngine;
-import ru.geardroid.design_patterns.entity.car.servicable.engine_device.CoolingController;
-import ru.geardroid.design_patterns.entity.car.servicable.engine_device.EngineStarter;
-import ru.geardroid.design_patterns.entity.car.servicable.engine_device.FuelInjector;
+import ru.geardroid.design_patterns.entity.car.serviceable.CarEngine;
+import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.CoolingController;
+import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.EngineStarter;
+import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.FuelInjector;
 
 import java.util.concurrent.*;
 

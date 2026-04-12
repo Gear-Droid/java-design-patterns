@@ -6,8 +6,8 @@ import org.junit.jupiter.params.provider.FieldSource;
 import ru.geardroid.design_patterns.entity.car.Car;
 import ru.geardroid.design_patterns.entity.car.SportCar;
 import ru.geardroid.design_patterns.entity.car.UnknownCar;
-import ru.geardroid.design_patterns.entity.car.servicable.SportEngine;
-import ru.geardroid.design_patterns.entity.car.servicable.UnknownEngine;
+import ru.geardroid.design_patterns.entity.car.serviceable.SportEngine;
+import ru.geardroid.design_patterns.entity.car.serviceable.UnknownEngine;
 import ru.geardroid.design_patterns.pattern.bridge.CarEngineBridge;
 
 import java.lang.reflect.InvocationTargetException;

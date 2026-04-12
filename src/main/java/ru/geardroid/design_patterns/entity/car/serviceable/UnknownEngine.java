@@ -1,11 +1,12 @@
-package ru.geardroid.design_patterns.entity.car.servicable;
+package ru.geardroid.design_patterns.entity.car.serviceable;
 
 import lombok.Getter;
 import ru.geardroid.design_patterns.pattern.bridge.CarEngineBridge;
+import ru.geardroid.design_patterns.pattern.template_method.CarEngineTemplate;
 
-public class SportEngine implements CarEngineBridge {
+public class UnknownEngine extends CarEngineTemplate implements CarEngineBridge {
 
-    public static final int SPEED_LIMIT = 300;
+    public static final int SPEED_LIMIT = 150;
 
     @Getter
     private CarEngine engine;
@@ -20,8 +21,8 @@ public class SportEngine implements CarEngineBridge {
         engine.stopEngine();
     }
 
-    public void setEngine() {
-        System.out.println("sport");
+    public void setEngine(){
+        System.out.println("unknown");
         engine = baseEngine(SPEED_LIMIT);
     }
 }

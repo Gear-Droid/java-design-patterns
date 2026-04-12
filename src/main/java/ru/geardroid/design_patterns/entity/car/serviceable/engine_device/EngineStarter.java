@@ -1,4 +1,4 @@
-package ru.geardroid.design_patterns.entity.car.servicable.engine_device;
+package ru.geardroid.design_patterns.entity.car.serviceable.engine_device;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;

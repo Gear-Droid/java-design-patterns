@@ -1,4 +1,4 @@
-package ru.geardroid.design_patterns.entity.car.servicable;
+package ru.geardroid.design_patterns.entity.car.serviceable;
 
 public interface CarEngine {
 

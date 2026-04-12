@@ -1,9 +1,9 @@
 package ru.geardroid.design_patterns.pattern;
 
 import org.junit.jupiter.api.Test;
-import ru.geardroid.design_patterns.entity.car.servicable.engine_device.CoolingController;
-import ru.geardroid.design_patterns.entity.car.servicable.engine_device.EngineStarter;
-import ru.geardroid.design_patterns.entity.car.servicable.engine_device.FuelInjector;
+import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.CoolingController;
+import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.EngineStarter;
+import ru.geardroid.design_patterns.entity.car.serviceable.engine_device.FuelInjector;
 import ru.geardroid.design_patterns.pattern.facade.ServiceableCarFacade;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
