@@ -2,7 +2,7 @@
 The following was discovered as part of building this project:
 
 * No Docker Compose services found. As of now, the application won't start! Please add at least one service to the `compose.yaml` file.
-* The original package name 'ru.geardroid.design-patterns' is invalid and this project uses 'ru.geardroid.design_patterns' instead.
+* The original package name 'ru.geardroid.design-patterns' is invalid and this project uses 'ru.geardroid.designpatterns' instead.
 
 # Getting Started
 
