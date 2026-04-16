@@ -30,7 +30,7 @@
 - _**Observer (Наблюдатель)** - позволяет одним объектам следить и реагировать на события, происходящие в других объектах. См. пример: [UniversityObserver](src/main/java/ru/geardroid/designpatterns/pattern/observer/UniversityObserver.java)_
 - _**Strategy (Стратегия)** - алгоритм стратегии может быть изменен во время выполнения программы. См. пример: [DownloadStrategy](src/main/java/ru/geardroid/designpatterns/pattern/strategy/DownloadStrategy.java)_
 - _**Command (Команда)** - интерфейс команды объявляет метод для выполнения определенного действия. См. пример: [CarEngineCommand](src/main/java/ru/geardroid/designpatterns/pattern/command/CarEngineCommand.java)_
-- _**State (Состояние)** - объект может изменять свое поведение в зависимости от его состояния._
+- _**State (Состояние)** - объект может изменять свое поведение в зависимости от его состояния. См. пример: [PlayerState](src/main/java/ru/geardroid/designpatterns/pattern/state/PlayerState.java)_
 - _**Visitor (Посетитель)** - используется для упрощения операций над группировками связанных объектов._
 - _**Iterator (Итератор)** - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления._
 - _**Interpreter (Интерпретатор)** - определяет грамматику простого языка для проблемной области._
