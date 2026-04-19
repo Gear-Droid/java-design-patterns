@@ -31,7 +31,7 @@
 - _**Strategy (Стратегия)** - алгоритм стратегии может быть изменен во время выполнения программы. См. пример: [DownloadStrategy](src/main/java/ru/geardroid/designpatterns/pattern/strategy/DownloadStrategy.java)_
 - _**Command (Команда)** - интерфейс команды объявляет метод для выполнения определенного действия. См. пример: [CarEngineCommand](src/main/java/ru/geardroid/designpatterns/pattern/command/CarEngineCommand.java)_
 - _**State (Состояние)** - объект может изменять свое поведение в зависимости от его состояния. См. пример: [PlayerState](src/main/java/ru/geardroid/designpatterns/pattern/state/PlayerState.java)_
-- _**Visitor (Посетитель)** - используется для упрощения операций над группировками связанных объектов._
+- _**Visitor (Посетитель)** - используется для упрощения операций над группировками связанных объектов. См. пример: [AreaCalculator](src/main/java/ru/geardroid/designpatterns/pattern/visitor/AreaCalculator.java)_
 - _**Iterator (Итератор)** - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления._
 - _**Interpreter (Интерпретатор)** - определяет грамматику простого языка для проблемной области._
 - _**Memento (Хранитель)** - используется для хранения состояния объекта, позже это состояние можно восстановить._
