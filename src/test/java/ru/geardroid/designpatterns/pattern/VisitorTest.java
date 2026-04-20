@@ -5,7 +5,7 @@ import ru.geardroid.designpatterns.entity.shape.Circle;
 import ru.geardroid.designpatterns.entity.shape.Shape;
 import ru.geardroid.designpatterns.entity.shape.Square;
 import ru.geardroid.designpatterns.entity.shape.Triangle;
-import ru.geardroid.designpatterns.pattern.visitor.AreaCalculator;
+import ru.geardroid.designpatterns.pattern.behavioral.visitor.AreaCalculator;
 
 import java.util.List;
 

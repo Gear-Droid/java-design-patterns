@@ -6,9 +6,9 @@ import org.junit.jupiter.params.provider.FieldSource;
 import ru.geardroid.designpatterns.entity.pc.ARMProcessor;
 import ru.geardroid.designpatterns.entity.pc.Processor;
 import ru.geardroid.designpatterns.entity.pc.X86Processor;
-import ru.geardroid.designpatterns.pattern.builder.ARMPCBuilder;
-import ru.geardroid.designpatterns.pattern.builder.PCBuilder;
-import ru.geardroid.designpatterns.pattern.builder.X86PCBuilder;
+import ru.geardroid.designpatterns.pattern.creational.builder.ARMPCBuilder;
+import ru.geardroid.designpatterns.pattern.creational.builder.PCBuilder;
+import ru.geardroid.designpatterns.pattern.creational.builder.X86PCBuilder;
 
 import java.util.List;
 

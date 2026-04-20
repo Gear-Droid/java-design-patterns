@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
-import ru.geardroid.designpatterns.pattern.proxy.ImageProxy;
+import ru.geardroid.designpatterns.pattern.structural.proxy.ImageProxy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

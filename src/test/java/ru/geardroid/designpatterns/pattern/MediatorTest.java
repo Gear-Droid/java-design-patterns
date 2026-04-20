@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
 import ru.geardroid.designpatterns.entity.user.MessengerUser;
-import ru.geardroid.designpatterns.pattern.mediator.MessageMediator;
+import ru.geardroid.designpatterns.pattern.behavioral.mediator.MessageMediator;
 
 import static org.mockito.Mockito.times;
 

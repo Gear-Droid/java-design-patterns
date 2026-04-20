@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.car.serviceable.engine_device.CoolingController;
 import ru.geardroid.designpatterns.entity.car.serviceable.engine_device.EngineStarter;
 import ru.geardroid.designpatterns.entity.car.serviceable.engine_device.FuelInjector;
-import ru.geardroid.designpatterns.pattern.facade.ServiceableCarFacade;
+import ru.geardroid.designpatterns.pattern.structural.facade.ServiceableCarFacade;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

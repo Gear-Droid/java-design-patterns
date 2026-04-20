@@ -7,7 +7,7 @@ import ru.geardroid.designpatterns.entity.os.LinuxOS;
 import ru.geardroid.designpatterns.entity.os.MacOS;
 import ru.geardroid.designpatterns.entity.os.OS;
 import ru.geardroid.designpatterns.entity.os.WindowsOS;
-import ru.geardroid.designpatterns.pattern.factory.OSFactory;
+import ru.geardroid.designpatterns.pattern.creational.factory.OSFactory;
 
 import java.util.Set;
 

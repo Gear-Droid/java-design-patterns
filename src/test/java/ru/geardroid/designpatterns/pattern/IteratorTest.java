@@ -2,7 +2,7 @@ package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.numbers.FibonacciNumbers;
-import ru.geardroid.designpatterns.pattern.iterator.Iterator;
+import ru.geardroid.designpatterns.pattern.behavioral.iterator.Iterator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

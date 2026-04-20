@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.user;
 
-import ru.geardroid.designpatterns.pattern.mediator.MessageMediator;
+import ru.geardroid.designpatterns.pattern.behavioral.mediator.MessageMediator;
 
 public record MessengerUser(String name) {
 

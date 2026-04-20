@@ -8,7 +8,7 @@ import ru.geardroid.designpatterns.entity.car.SportCar;
 import ru.geardroid.designpatterns.entity.car.UnknownCar;
 import ru.geardroid.designpatterns.entity.car.serviceable.SportEngine;
 import ru.geardroid.designpatterns.entity.car.serviceable.UnknownEngine;
-import ru.geardroid.designpatterns.pattern.bridge.CarEngineBridge;
+import ru.geardroid.designpatterns.pattern.structural.bridge.CarEngineBridge;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;

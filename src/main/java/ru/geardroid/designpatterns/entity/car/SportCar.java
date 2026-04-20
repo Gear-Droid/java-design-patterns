@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.car;
 
-import ru.geardroid.designpatterns.pattern.bridge.CarEngineBridge;
+import ru.geardroid.designpatterns.pattern.structural.bridge.CarEngineBridge;
 
 public class SportCar extends Car {
 

@@ -2,8 +2,8 @@ package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.user.User;
-import ru.geardroid.designpatterns.pattern.memento.UserMemento;
-import ru.geardroid.designpatterns.pattern.memento.UserMementoArchive;
+import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMemento;
+import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMementoArchive;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

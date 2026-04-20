@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.entity.car.command;
 
 import ru.geardroid.designpatterns.entity.car.serviceable.ServiceableCarEngine;
-import ru.geardroid.designpatterns.pattern.command.CarEngineCommand;
+import ru.geardroid.designpatterns.pattern.behavioral.command.CarEngineCommand;
 
 public class StartCar extends ServiceableCarEngine implements CarEngineCommand {
 

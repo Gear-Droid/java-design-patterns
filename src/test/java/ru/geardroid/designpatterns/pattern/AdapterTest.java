@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.bank.ABank;
 import ru.geardroid.designpatterns.entity.bank.TBank;
-import ru.geardroid.designpatterns.pattern.adapter.ABankAdapter;
+import ru.geardroid.designpatterns.pattern.structural.adapter.ABankAdapter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

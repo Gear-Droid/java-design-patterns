@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.entity.payment;
 
 import lombok.Getter;
-import ru.geardroid.designpatterns.pattern.chainofresponsibility.PaymentChainOfResponsibility;
+import ru.geardroid.designpatterns.pattern.behavioral.chainofresponsibility.PaymentChainOfResponsibility;
 
 @Getter
 public class PayPalPayment implements PaymentChainOfResponsibility {

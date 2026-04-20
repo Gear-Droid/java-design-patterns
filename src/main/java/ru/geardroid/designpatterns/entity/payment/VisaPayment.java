@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.entity.payment;
 
 import lombok.Setter;
-import ru.geardroid.designpatterns.pattern.chainofresponsibility.PaymentChainOfResponsibility;
+import ru.geardroid.designpatterns.pattern.behavioral.chainofresponsibility.PaymentChainOfResponsibility;
 
 public class VisaPayment implements PaymentChainOfResponsibility {
 

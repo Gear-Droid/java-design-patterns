@@ -3,8 +3,8 @@ package ru.geardroid.designpatterns.pattern;
 import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.house.BrickHouse;
 import ru.geardroid.designpatterns.entity.house.WoodenHouse;
-import ru.geardroid.designpatterns.pattern.decorator.InsuranceHouseDecorator;
-import ru.geardroid.designpatterns.pattern.decorator.SmartHouseDecorator;
+import ru.geardroid.designpatterns.pattern.structural.decorator.InsuranceHouseDecorator;
+import ru.geardroid.designpatterns.pattern.structural.decorator.SmartHouseDecorator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

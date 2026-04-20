@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.expression.text.LowerExpression;
 import ru.geardroid.designpatterns.entity.expression.text.TextContext;
 import ru.geardroid.designpatterns.entity.expression.text.UpperExpression;
-import ru.geardroid.designpatterns.pattern.interpreter.ExpressionInterpreter;
+import ru.geardroid.designpatterns.pattern.behavioral.interpreter.ExpressionInterpreter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

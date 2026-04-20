@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import ru.geardroid.designpatterns.pattern.prototype.Copyable;
+import ru.geardroid.designpatterns.pattern.creational.prototype.Copyable;
 
 @Getter
 @Setter

@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.numbers;
 
-import ru.geardroid.designpatterns.pattern.iterator.Iterator;
+import ru.geardroid.designpatterns.pattern.behavioral.iterator.Iterator;
 
 import java.util.Arrays;
 

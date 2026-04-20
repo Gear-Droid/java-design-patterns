@@ -2,8 +2,8 @@ package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.car.saleable.*;
-import ru.geardroid.designpatterns.pattern.abstractfactory.DECarFactory;
-import ru.geardroid.designpatterns.pattern.abstractfactory.RUCarFactory;
+import ru.geardroid.designpatterns.pattern.creational.abstractfactory.DECarFactory;
+import ru.geardroid.designpatterns.pattern.creational.abstractfactory.RUCarFactory;
 
 import java.util.Map;
 

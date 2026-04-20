@@ -6,8 +6,8 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.FieldSource;
 import ru.geardroid.designpatterns.entity.context.DownloadLinuxStrategy;
 import ru.geardroid.designpatterns.entity.context.DownloadWindowsStrategy;
-import ru.geardroid.designpatterns.pattern.strategy.DownloadContext;
-import ru.geardroid.designpatterns.pattern.strategy.DownloadStrategy;
+import ru.geardroid.designpatterns.pattern.behavioral.strategy.DownloadContext;
+import ru.geardroid.designpatterns.pattern.behavioral.strategy.DownloadStrategy;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;

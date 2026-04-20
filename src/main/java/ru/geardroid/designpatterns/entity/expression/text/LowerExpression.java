@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.entity.expression.text;
 
 import lombok.AllArgsConstructor;
-import ru.geardroid.designpatterns.pattern.interpreter.ExpressionInterpreter;
+import ru.geardroid.designpatterns.pattern.behavioral.interpreter.ExpressionInterpreter;
 
 @AllArgsConstructor
 public class LowerExpression implements ExpressionInterpreter {

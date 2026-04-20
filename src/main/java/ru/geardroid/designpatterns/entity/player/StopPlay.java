@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.player;
 
-import ru.geardroid.designpatterns.pattern.state.PlayerState;
+import ru.geardroid.designpatterns.pattern.behavioral.state.PlayerState;
 
 public class StopPlay implements PlayerState {
 

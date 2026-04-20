@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
-import ru.geardroid.designpatterns.pattern.composite.ExpressionComposite;
+import ru.geardroid.designpatterns.pattern.structural.composite.ExpressionComposite;
 import ru.geardroid.designpatterns.entity.expression.math.ExpressionValue;
 import ru.geardroid.designpatterns.entity.expression.math.SubExpression;
 

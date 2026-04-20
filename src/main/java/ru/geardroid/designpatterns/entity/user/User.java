@@ -3,7 +3,7 @@ package ru.geardroid.designpatterns.entity.user;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import ru.geardroid.designpatterns.pattern.memento.UserMemento;
+import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMemento;
 
 @Getter
 @Setter

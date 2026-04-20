@@ -1,7 +1,7 @@
 package ru.geardroid.designpatterns.entity.car;
 
 import lombok.Getter;
-import ru.geardroid.designpatterns.pattern.bridge.CarEngineBridge;
+import ru.geardroid.designpatterns.pattern.structural.bridge.CarEngineBridge;
 
 public abstract class Car {
 

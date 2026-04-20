@@ -1,8 +1,8 @@
 package ru.geardroid.designpatterns.entity.car.serviceable;
 
 import lombok.Getter;
-import ru.geardroid.designpatterns.pattern.bridge.CarEngineBridge;
-import ru.geardroid.designpatterns.pattern.templatemethod.CarEngineTemplate;
+import ru.geardroid.designpatterns.pattern.structural.bridge.CarEngineBridge;
+import ru.geardroid.designpatterns.pattern.behavioral.templatemethod.CarEngineTemplate;
 
 public class SportEngine extends CarEngineTemplate implements CarEngineBridge {
 

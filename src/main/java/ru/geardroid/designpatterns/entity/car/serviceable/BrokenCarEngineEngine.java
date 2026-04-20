@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.car.serviceable;
 
-import ru.geardroid.designpatterns.pattern.templatemethod.CarEngineTemplate;
+import ru.geardroid.designpatterns.pattern.behavioral.templatemethod.CarEngineTemplate;
 
 public class BrokenCarEngineEngine extends CarEngineTemplate {
 

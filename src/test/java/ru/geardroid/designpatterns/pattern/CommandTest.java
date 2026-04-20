@@ -3,8 +3,8 @@ package ru.geardroid.designpatterns.pattern;
 import org.junit.jupiter.api.Test;
 import ru.geardroid.designpatterns.entity.car.command.StartCar;
 import ru.geardroid.designpatterns.entity.car.command.StopCar;
-import ru.geardroid.designpatterns.pattern.command.CarEngineCommand;
-import ru.geardroid.designpatterns.pattern.command.CarInvoker;
+import ru.geardroid.designpatterns.pattern.behavioral.command.CarEngineCommand;
+import ru.geardroid.designpatterns.pattern.behavioral.command.CarInvoker;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

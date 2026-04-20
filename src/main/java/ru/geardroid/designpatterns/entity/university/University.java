@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.university;
 
-import ru.geardroid.designpatterns.pattern.observer.UniversityObserver;
+import ru.geardroid.designpatterns.pattern.behavioral.observer.UniversityObserver;
 
 import java.util.ArrayList;
 import java.util.List;

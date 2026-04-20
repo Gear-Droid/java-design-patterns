@@ -1,8 +1,8 @@
 package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
-import ru.geardroid.designpatterns.pattern.singleton.LazySingleton;
-import ru.geardroid.designpatterns.pattern.singleton.Singleton;
+import ru.geardroid.designpatterns.pattern.creational.singleton.LazySingleton;
+import ru.geardroid.designpatterns.pattern.creational.singleton.Singleton;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

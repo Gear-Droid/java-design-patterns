@@ -1,6 +1,6 @@
 package ru.geardroid.designpatterns.entity.context;
 
-import ru.geardroid.designpatterns.pattern.strategy.DownloadStrategy;
+import ru.geardroid.designpatterns.pattern.behavioral.strategy.DownloadStrategy;
 
 public class DownloadLinuxStrategy implements DownloadStrategy {
 
