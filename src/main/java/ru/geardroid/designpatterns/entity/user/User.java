@@ -1,10 +1,26 @@
 package ru.geardroid.designpatterns.entity.user;
 
-import ru.geardroid.designpatterns.pattern.mediator.MessageMediator;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import ru.geardroid.designpatterns.pattern.memento.UserMemento;
 
-public record User(String name) {
+@Getter
+@Setter
+@AllArgsConstructor
+public class User {
 
-    public void sendMessage(String msg) {
-        MessageMediator.sendMessage(this, msg);
+    private String name;
+    private int age;
+
+    public UserMemento save() {
+        System.out.printf("save: name = %s, age = %s%n", name, age);
+        return new UserMemento(name, age);
+    }
+
+    public void restore(UserMemento memento) {
+        name = memento.getName();
+        age = memento.getAge();
+        System.out.printf("restore: name = %s, age = %s%n", name, age);
     }
 }

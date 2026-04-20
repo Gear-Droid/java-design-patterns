@@ -34,6 +34,6 @@
 - _**Visitor (Посетитель)** - используется для упрощения операций над группировками связанных объектов. См. пример: [AreaCalculator](src/main/java/ru/geardroid/designpatterns/pattern/visitor/AreaCalculator.java)_
 - _**Iterator (Итератор)** - последовательно осуществляет доступ к элементам объекта коллекции, не зная его основного представления. См. пример: [Iterator](src/main/java/ru/geardroid/designpatterns/pattern/iterator/Iterator.java)_
 - _**Interpreter (Интерпретатор)** - определяет грамматику простого языка для проблемной области. См. пример: [ExpressionInterpreter](src/main/java/ru/geardroid/designpatterns/pattern/interpreter/ExpressionInterpreter.java)_
-- _**Memento (Хранитель)** - используется для хранения состояния объекта, позже это состояние можно восстановить._
+- _**Memento (Хранитель)** - используется для хранения состояния объекта, позже это состояние можно восстановить. См. пример: [UserMementoArchive](src/main/java/ru/geardroid/designpatterns/pattern/memento/UserMementoArchive.java)_
 ---
 #### Разумное использование паттернов проектирования приводит к повышению надежности обслуживания кода, поскольку в дополнение к тому, чтобы быть хорошим решением общей проблемы, паттерны проектирования могут быть распознаны другими разработчиками, что уменьшает время при работе с определенным кодом.

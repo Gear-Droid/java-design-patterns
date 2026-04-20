@@ -3,14 +3,14 @@ package ru.geardroid.designpatterns.pattern;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
-import ru.geardroid.designpatterns.entity.user.User;
+import ru.geardroid.designpatterns.entity.user.MessengerUser;
 import ru.geardroid.designpatterns.pattern.mediator.MessageMediator;
 
 import static org.mockito.Mockito.times;
 
 public class MediatorTest {
 
-    private static final User TEST_USER = new User("testUser");
+    private static final MessengerUser TEST_USER = new MessengerUser("testUser");
     private static final String TEST_MESSAGE = "testMessage";
 
     private final MockedStatic<MessageMediator> mockStaticMessageMediator = Mockito.mockStatic(MessageMediator.class);
