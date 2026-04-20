@@ -1,8 +1,8 @@
 package ru.geardroid.designpatterns.pattern.composite;
 
 import lombok.NoArgsConstructor;
-import ru.geardroid.designpatterns.entity.expression.ExpressionValue;
-import ru.geardroid.designpatterns.entity.expression.SubExpression;
+import ru.geardroid.designpatterns.entity.expression.math.ExpressionValue;
+import ru.geardroid.designpatterns.entity.expression.math.SubExpression;
 
 import java.util.ArrayList;
 import java.util.List;

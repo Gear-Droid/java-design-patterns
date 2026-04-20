@@ -1,4 +1,4 @@
-package ru.geardroid.designpatterns.entity.expression;
+package ru.geardroid.designpatterns.entity.expression.math;
 
 import java.util.List;
 
