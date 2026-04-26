@@ -6,9 +6,10 @@ import ru.geardroid.designpatterns.pattern.behavioral.visitor.ShapeVisitor;
 
 @Getter
 @AllArgsConstructor
-public class Square implements Shape {
+public class TriangleElement implements ShapeElement {
 
-    private double sideLength;
+    private double baseOfTriangle;
+    private double heightOfTriangle;
 
     @Override
     public void accept(ShapeVisitor visitor) {

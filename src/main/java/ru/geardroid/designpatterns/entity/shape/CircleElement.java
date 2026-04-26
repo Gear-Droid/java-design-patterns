@@ -6,7 +6,7 @@ import ru.geardroid.designpatterns.pattern.behavioral.visitor.ShapeVisitor;
 
 @Getter
 @AllArgsConstructor
-public class Circle implements Shape {
+public class CircleElement implements ShapeElement {
 
     private double radius;
 

@@ -1,12 +1,12 @@
 package ru.geardroid.designpatterns.pattern.behavioral.visitor;
 
-import ru.geardroid.designpatterns.entity.shape.Circle;
-import ru.geardroid.designpatterns.entity.shape.Square;
-import ru.geardroid.designpatterns.entity.shape.Triangle;
+import ru.geardroid.designpatterns.entity.shape.CircleElement;
+import ru.geardroid.designpatterns.entity.shape.SquareElement;
+import ru.geardroid.designpatterns.entity.shape.TriangleElement;
 
 public interface ShapeVisitor {
 
-    void visit(Circle circle);
-    void visit(Square square);
-    void visit(Triangle triangle);
+    void visit(CircleElement circle);
+    void visit(SquareElement square);
+    void visit(TriangleElement triangle);
 }

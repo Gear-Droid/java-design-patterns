@@ -2,7 +2,7 @@ package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import ru.geardroid.designpatterns.entity.university.University;
+import ru.geardroid.designpatterns.entity.university.UniversitySubject;
 import ru.geardroid.designpatterns.pattern.behavioral.observer.UniversityObserver;
 
 import java.util.List;
@@ -15,11 +15,11 @@ public class ObserverTest {
     private static final String TEST_STUDENT = "testStudent";
     private static final String NEW_TEST_STUDENT = "newTestStudent";
 
-    private static University createUniversity() {
-        return new University();
+    private static UniversitySubject createUniversity() {
+        return new UniversitySubject();
     }
 
-    private static University createUniversityWithObserver(UniversityObserver observer) {
+    private static UniversitySubject createUniversityWithObserver(UniversityObserver observer) {
         var university = createUniversity();
         university.addStudent(TEST_STUDENT);
         university.addObserver(observer);

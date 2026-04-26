@@ -5,7 +5,7 @@ import ru.geardroid.designpatterns.pattern.behavioral.observer.UniversityObserve
 import java.util.ArrayList;
 import java.util.List;
 
-public class University {
+public class UniversitySubject {
 
     private final List<UniversityObserver> observers = new ArrayList<>();
     private final List<String> students = new ArrayList<>();

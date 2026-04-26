@@ -2,10 +2,10 @@ package ru.geardroid.designpatterns.entity.context;
 
 import ru.geardroid.designpatterns.pattern.behavioral.strategy.DownloadStrategy;
 
-public class DownloadWindowsStrategy implements DownloadStrategy {
+public class DownloadPDFStrategy implements DownloadStrategy {
 
     public String download(String file) {
-        System.out.println("windows download: " + file);
-        return "%s.win".formatted(file);
+        System.out.println("PDF file download: " + file);
+        return "%s.pdf".formatted(file);
     }
 }

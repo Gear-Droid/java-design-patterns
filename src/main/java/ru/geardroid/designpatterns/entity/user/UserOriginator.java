@@ -8,7 +8,7 @@ import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMemento;
 @Getter
 @Setter
 @AllArgsConstructor
-public class User {
+public class UserOriginator {
 
     private String name;
     private int age;

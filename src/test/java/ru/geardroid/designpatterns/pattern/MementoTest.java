@@ -1,9 +1,9 @@
 package ru.geardroid.designpatterns.pattern;
 
 import org.junit.jupiter.api.Test;
-import ru.geardroid.designpatterns.entity.user.User;
+import ru.geardroid.designpatterns.entity.user.UserOriginator;
 import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMemento;
-import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMementoArchive;
+import ru.geardroid.designpatterns.pattern.behavioral.memento.UserMementoCaretaker;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,12 +12,12 @@ public class MementoTest {
     private static final String USER_NAME = "Vlad";
     private static final int USER_AGE = 26;
 
-    private User createTestUser() {
-        return new User(USER_NAME, USER_AGE);
+    private UserOriginator createTestUser() {
+        return new UserOriginator(USER_NAME, USER_AGE);
     }
 
-    private UserMemento createUserSnapshot(User user) {
-        return new UserMemento(user.getName(), user.getAge());
+    private UserMemento createUserSnapshot(UserOriginator userOriginator) {
+        return new UserMemento(userOriginator.getName(), userOriginator.getAge());
     }
 
     @Test
@@ -48,16 +48,16 @@ public class MementoTest {
     }
 
     @Test
-    void givenSavedUserState_whenChangeUserAndUndoArchive_thenShouldRevertState() {
+    void givenSavedUserState_whenChangeUserAndUndo_thenShouldRevertState() {
         // given:
         var user = createTestUser();
-        var archive = new UserMementoArchive(user);
-        archive.saveState();
+        var caretaker = new UserMementoCaretaker(user);
+        caretaker.saveState();
         // when:
         user.setName("Bob");
         user.setAge(30);
-        archive.undo();
-        var current = archive.getUser();
+        caretaker.undo();
+        var current = caretaker.getUserOriginator();
         // then:
         assertThat(current.getName()).isEqualTo(USER_NAME);
         assertThat(current.getAge()).isEqualTo(USER_AGE);
