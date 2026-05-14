@@ -9,8 +9,8 @@ import ru.geardroid.designpatterns.entity.context.DownloadPDFStrategy;
 import ru.geardroid.designpatterns.pattern.behavioral.strategy.DownloadContext;
 import ru.geardroid.designpatterns.pattern.behavioral.strategy.DownloadStrategy;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import java.util.function.Supplier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -20,17 +20,15 @@ public class StrategyTest {
     public static final String PDF = ".pdf";
     public static final String PNG = ".png";
     public static final List<Arguments> STRATEGY_TEST_DATA = List.of(
-            Arguments.of(DownloadPDFStrategy.class, PDF),
-            Arguments.of(DownloadPNGStrategy.class, PNG)
+            Arguments.of((Supplier<DownloadStrategy>) DownloadPDFStrategy::new, PDF),
+            Arguments.of((Supplier<DownloadStrategy>) DownloadPNGStrategy::new, PNG)
     );
 
     @ParameterizedTest
     @FieldSource("STRATEGY_TEST_DATA")
-    void givenContextWithStrategy_thenCorrectFilename(Class<? extends DownloadStrategy> strategyClass, String endFile)
-            throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    void givenContextWithStrategy_thenCorrectFilename(Supplier<DownloadStrategy> strategySupplier, String endFile) {
         // given:
-        var strategy = strategyClass.getDeclaredConstructor()
-                .newInstance();
+        var strategy = strategySupplier.get();
         var context = new DownloadContext(strategy);
         // when:
         String result = context.download(TEST_FILENAME);

@@ -10,35 +10,32 @@ import ru.geardroid.designpatterns.entity.car.serviceable.SportEngine;
 import ru.geardroid.designpatterns.entity.car.serviceable.UnknownEngine;
 import ru.geardroid.designpatterns.pattern.structural.bridge.CarEngineBridge;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import java.util.function.Supplier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class BridgeTest {
 
+    static final CarEngineBridge UNKNOWN_ENGINE = new UnknownEngine();
+    static final CarEngineBridge SPORT_ENGINE = new SportEngine();
+
     public static final List<Arguments> BRIDGE_TEST_DATA = List.of(
-            Arguments.of(UnknownCar.class, UnknownEngine.class),
-            Arguments.of(UnknownCar.class, SportEngine.class),
-            Arguments.of(SportCar.class, UnknownEngine.class),
-            Arguments.of(SportCar.class, SportEngine.class)
+            Arguments.of(UNKNOWN_ENGINE, (Supplier<Car>) () -> new UnknownCar(UNKNOWN_ENGINE)),
+            Arguments.of(SPORT_ENGINE, (Supplier<Car>) () -> new UnknownCar(SPORT_ENGINE)),
+            Arguments.of(UNKNOWN_ENGINE, (Supplier<Car>) () -> new SportCar(UNKNOWN_ENGINE)),
+            Arguments.of(SPORT_ENGINE, (Supplier<Car>) () -> new SportCar(SPORT_ENGINE))
     );
 
     @ParameterizedTest
     @FieldSource("BRIDGE_TEST_DATA")
-    void givenCarWithEngine_thenCorrectCarAndEngineClass(
-            Class<? extends Car> carClass,
-            Class<? extends CarEngineBridge> engineClass
-    ) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    void givenCarWithEngine_thenCorrectCarAndEngineClass(CarEngineBridge engine,
+                                                         Supplier<Car> carGenerator) {
         // given:
-        var engine = engineClass.getDeclaredConstructor()
-                .newInstance();
-        var car = carClass.getDeclaredConstructor(CarEngineBridge.class)
-                .newInstance(engine);
+        var car = carGenerator.get();
         // when:
         car.setEngine();
         // then:
-        assertThat(car).isInstanceOf(carClass);
-        assertThat(car.getEngine()).isInstanceOf(engineClass);
+        assertThat(car.getEngine()).isInstanceOf(engine.getClass());
     }
 }
